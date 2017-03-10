@@ -20,5 +20,6 @@ scrape_configs:
 
   - job_name: 'webhook-slack'
     scrape_interval: 5s
+    metrics_path: "/prometheus"
     static_configs:
-      - targets: ['webhook-slack:8080/prometheus']
+      - targets: ['webhook-slack:8080']
