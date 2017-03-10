@@ -1,4 +1,5 @@
- FROM prom/prometheus:v1.5.2
- MAINTAINER Dan <i@shanhh.com>
+FROM prom/prometheus:v1.5.2
+MAINTAINER Dan <i@shanhh.com>
 
- EXPOSE 9090 
+ADD prometheus.yml /etc/prometheus/
+EXPOSE 9090 
